@@ -203,6 +203,5 @@ npm pack --dry-run
 test suite. See [examples](examples/) for native monitoring, asynchronous streams, a browser
 monitor, and adapter mappings.
 
-This is a new implementation inspired by
-[PS3.js](https://github.com/19h/PS3.js). It does not retain its global
-variables or legacy server dependencies. New code is [MIT licensed](LICENSE).
+This is a new implementation inspired by [PS3.js](https://github.com/19h/PS3.js). It does not retain
+its global variables or legacy server dependencies. New code is [MIT licensed](LICENSE).
