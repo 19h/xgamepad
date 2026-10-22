@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "ES2023",
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "lib": ["ES2023", "DOM", "ESNext.Disposable"],
+        "noEmit": true,
+        "skipLibCheck": false
+    },
+    "include": ["./api.ts"]
+}

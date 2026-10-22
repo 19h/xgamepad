@@ -1,0 +1,167 @@
+# Dependencies and package-manager caches.
+# Keep package-lock.json, npm-shrinkwrap.json, yarn.lock, and pnpm-lock.yaml tracked.
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/*
+!.yarn/patches/
+!.yarn/plugins/
+!.yarn/releases/
+!.yarn/sdks/
+!.yarn/versions/
+.pnp.*
+
+# Generated builds and package archives.
+# bin/ contains the CLI source and must remain tracked.
+/build/
+/dist/
+/out/
+/release/
+/target/
+*.tgz
+*.tsbuildinfo
+
+# Native addon build products and compiler intermediates.
+*.node
+*.o
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.idb
+*.pch
+*.gcda
+*.gcno
+*.dSYM/
+
+# Test coverage and generated test reports.
+coverage/
+.nyc_output/
+.tap/
+/test-results/
+/test-reports/
+/playwright-report/
+/blob-report/
+/junit.xml
+/lcov.info
+
+# Tool and bundler caches.
+.cache/
+.eslintcache
+.stylelintcache
+.prettiercache
+.parcel-cache/
+.rollup.cache/
+.rpt2_cache/
+.vite/
+.vitest/
+.turbo/
+.swc/
+.webpack.cache/
+
+# Generated documentation and static-site output.
+/docs/.cache/
+/docs/.vitepress/cache/
+/docs/.vitepress/dist/
+/docs/_build/
+/docs/site/
+/.docusaurus/
+/storybook-static/
+
+# Runtime logs, process files, and Node.js diagnostic dumps.
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.pid
+*.pid.lock
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+isolate-*.log
+*.cpuprofile
+*.heapprofile
+*.heapsnapshot
+/core
+/core.[0-9]*
+
+# Local controller recordings and generated diagnostics.
+# Deliberate protocol fixtures under test/ remain trackable.
+/captures/
+/recordings/
+/artifacts/
+/diagnostics/
+
+# Local environment and machine-specific configuration.
+# Template files remain trackable so setup can be reproduced.
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+!.env.*.sample
+!.env.*.template
+*.local
+.secrets/
+
+# Editor state. Preserve shareable VS Code configuration.
+.idea/
+.fleet/
+.history/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/*.code-snippets
+*.sublime-workspace
+*.swp
+*.swo
+*.swn
+*~
+.#*
+\#*\#
+
+# Temporary files and interrupted writes.
+/tmp/
+/temp/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+
+# macOS filesystem metadata.
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.VolumeIcon.icns
+
+# Windows filesystem metadata.
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux desktop and network-filesystem metadata.
+.directory
+.Trash-*/
+.nfs*
+
+# Python caches from local documentation or development scripts.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/

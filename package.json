@@ -1,0 +1,73 @@
+{
+    "name": "xgamepad",
+    "version": "1.0.0",
+    "description": "A unified, modern JavaScript API for PlayStation, Xbox, and mapped game controllers.",
+    "type": "module",
+    "license": "MIT",
+    "engines": {
+        "node": ">=22.13.0"
+    },
+    "exports": {
+        ".": {
+            "browser": {
+                "types": "./types/browser.d.ts",
+                "default": "./src/browser.js"
+            },
+            "types": "./types/index.d.ts",
+            "default": "./src/index.js"
+        },
+        "./browser": {
+            "types": "./types/browser.d.ts",
+            "default": "./src/browser.js"
+        },
+        "./hid": {
+            "types": "./types/hid.d.ts",
+            "default": "./src/hid.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "bin": {
+        "xgamepad": "./bin/xgamepad.js"
+    },
+    "files": [
+        "src",
+        "types",
+        "bin",
+        "docs",
+        "examples",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "test": "node --test test/*.test.js",
+        "test:coverage": "node --test --experimental-test-coverage test/*.test.js",
+        "lint": "eslint .",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "typecheck": "tsc -p test/types/tsconfig.json",
+        "check": "npm run lint && npm run format:check && npm run typecheck && npm test"
+    },
+    "optionalDependencies": {
+        "@kmamal/sdl": "~0.11.13",
+        "node-hid": "^3.4.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^10.0.0",
+        "eslint": "^10.0.0",
+        "globals": "^17.0.0",
+        "prettier": "^3.9.0",
+        "typescript": "~5.9.3"
+    },
+    "keywords": [
+        "gamepad",
+        "controller",
+        "playstation",
+        "ps2",
+        "ps3",
+        "ps4",
+        "ps5",
+        "xbox",
+        "hid",
+        "sdl"
+    ]
+}
