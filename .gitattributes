@@ -1,0 +1,2 @@
+# Keep text checkouts consistent with .editorconfig and Prettier on every OS.
+* text=auto eol=lf
